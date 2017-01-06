@@ -8,6 +8,8 @@ import ua.in.renting.android.R;
  */
 public class LoginFragment extends BaseFragment {
 
+    // TODO: 06/01/17 change styles. Add animation
+
     public static LoginFragment newInstance() {
         return new LoginFragment();
     }

@@ -15,7 +15,7 @@ import ua.in.renting.android.api.model.ApiResponse;
  * @author Maxim Ambroskin kkxmshu@gmail.com
  * @since 03/01/17
  */
-public class ApiContract {
+public class ApiProvider {
 
     public static Api getApi() {
         return new Retrofit.Builder().baseUrl(BuildConfig.SERVER_URL)

@@ -14,7 +14,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-//        final ApiContract.Api api = ApiContract.getApi();
+//        final ApiProvider.Api api = ApiProvider.getApi();
 //        final Call<ApiResponse> login = api.login("kkxmshu", "temp");
 //        login.enqueue(new Callback<ApiResponse>() {
 //            @Override

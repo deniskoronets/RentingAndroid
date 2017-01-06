@@ -7,18 +7,19 @@
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_above="@+id/et_login"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:layout_above="@+id/et_username"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent"
+        android:contentDescription="@string/content_logo"/>
 
     <EditText
-        android:id="@+id/et_login"
+        android:id="@+id/et_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/et_password"
-        android:hint="@string/login"
+        android:hint="@string/username"
         android:inputType="textEmailAddress"
         android:nextFocusDown="@+id/et_password"/>
 
@@ -36,17 +37,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_password"
+        android:layout_marginTop="@dimen/spacing_d2"
         android:text="@string/enter"/>
 
-    <TextView
+    <Button
         android:id="@+id/btn_google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/btn_login"
         android:layout_toStartOf="@+id/center"
-        android:gravity="center"
-        android:text="@string/via_google"/>
+        android:drawableStart="@drawable/vec_google"
+        android:text="@string/google"
+        android:theme="@style/Button.Google"/>
 
     <Space
         android:id="@+id/center"
@@ -54,20 +57,22 @@
         android:layout_height="0dp"
         android:layout_centerHorizontal="true"/>
 
-    <TextView
+    <Button
         android:id="@+id/btn_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/btn_login"
         android:layout_toEndOf="@+id/center"
-        android:gravity="center"
-        android:text="@string/via_facebook"/>
+        android:drawableStart="@drawable/vec_facebook"
+        android:text="@string/facebook"
+        android:theme="@style/Button.Facebook"/>
 
     <TextView
         android:id="@+id/tv_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/do_not_have_an_account"/>
+        android:text="@string/do_not_have_an_account"
+        android:textColor="@android:color/white"/>
 </RelativeLayout>
