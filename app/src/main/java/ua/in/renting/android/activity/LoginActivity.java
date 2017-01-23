@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 
 import ua.in.renting.android.R;
-import ua.in.renting.android.fragment.LoginFragment;
+import ua.in.renting.android.fragment.auth.LoginFragment;
 
 /**
  * @author Maxim Ambroskin kkxmshu@gmail.com
